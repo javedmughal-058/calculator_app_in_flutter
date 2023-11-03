@@ -35,7 +35,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Calculator'),
+        title: const Text('Calculator', style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.w700)),
         backgroundColor: Colors.black,
       ),
       body: Padding(
@@ -172,7 +172,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
     }
     else if(btnText == '+' || btnText == '-' || btnText == 'x' || btnText == '/' || btnText == '=') {
-      
+
       if(numOne == 0) {
         numOne = double.parse(result);
       }

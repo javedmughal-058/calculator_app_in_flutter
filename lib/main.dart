@@ -5,6 +5,7 @@ import 'calculator_page.dart';
 
 void main() {
   runApp(DevicePreview(
+      enabled: false,
       builder: (context)=> const MyApp()));
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
